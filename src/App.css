@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dash{
+  height: 88vh;
+  width: 100%;
+  background-image: url('https://www.teahub.io/photos/full/253-2538486_slider3-restaurant-food-pic-hd.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes animate{
+  0%{
+    background-image: url('https://i.pinimg.com/736x/40/17/1f/40171f05bbf7ed737986dedbaa7c3125.jpg');
+  }40%{
+    background-image: url('https://www.teahub.io/photos/full/253-2538486_slider3-restaurant-food-pic-hd.jpg');
+  }80%{
+
+     background-image: url('https://i.pinimg.com/736x/40/17/1f/40171f05bbf7ed737986dedbaa7c3125.jpg');
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.flex-wrap {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+}
+
+.mbtn {
+  width: 200px;
+  margin: 10px;
+  background: transparent;
+  height: 50px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.mbtn:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+
+.my-modal .modal-content {
+  background-color: black;
+  color: antiquewhite;
+}
+
+
+.btn3{
+  display: inline;
+  width: 50%;
+  position: relative;
+  left: 40%;
+  top: 20px;
+}
+
+.btn{
+  margin-left: 5px;
+  background: transparent;
+}
+
+
+.rating{
+  display: none;
+}
+
+
+.form {
+  width: 600px;
+  position: relative;
+  left: 30%;
+  top: 100px;
+  right: 20%;
+  border-style: groove;
+}
+
+.btn2{
+  margin-bottom: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #3a102f; 
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
